@@ -30,6 +30,21 @@ dependencies {
     testCompile 'junit:junit:4.12'
 }
 
+task javadocJar(type: Jar, dependsOn: javadoc) {
+    classifier = 'javadoc'
+    from sourceSets.main.allSource
+}
+
+task sourcesJar(type: Jar) {
+    from sourceSets.main.allSource
+    classifier = 'sources'
+}
+
+artifacts {
+    archives jar
+    archives javadocJar
+    archives sourcesJar
+}
 
 ext {
     uploadArchive=true
