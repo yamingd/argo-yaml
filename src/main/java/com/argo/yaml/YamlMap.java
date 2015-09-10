@@ -16,6 +16,10 @@ public class YamlMap {
         this.data = data;
     }
 
+    public Map<String, Object> getData() {
+        return data;
+    }
+
     @SuppressWarnings("unchecked")
     public <T> T get(String key){
         Object temp = this.data.get(key);
