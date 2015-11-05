@@ -39,8 +39,8 @@ public class YamlMap {
 
     /**
      *
-     * @param key
-     * @return
+     * @param key 配置Key
+     * @return Integer
      */
     public Integer getInt(String key){
         Integer val = get(key);
@@ -54,8 +54,8 @@ public class YamlMap {
 
     /**
      *
-     * @param key
-     * @return
+     * @param key 配置Key
+     * @return Long
      */
     public Long getLong(String key){
         Long val = get(key);
@@ -69,8 +69,8 @@ public class YamlMap {
 
     /**
      *
-     * @param key
-     * @return
+     * @param key 配置Key
+     * @return String
      */
     public String getString(String key){
         String val = get(key);
@@ -84,8 +84,8 @@ public class YamlMap {
 
     /**
      *
-     * @param key
-     * @return
+     * @param key 配置Key
+     * @return Boolean
      */
     public Boolean getBoolean(String key){
         Boolean val = get(key);

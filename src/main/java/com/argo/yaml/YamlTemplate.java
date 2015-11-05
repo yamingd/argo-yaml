@@ -13,10 +13,11 @@ public class YamlTemplate {
 
     /**
      * 加载并序列化为 T
-     * @param type
-     * @param fileName
-     * @param <T>
-     * @return
+     * @param type 目标配置类
+     * @param fileName 配置文件(.yaml)
+     * @param <T> 返回的目标类型
+     * @return T 目标实例
+     * @throws IOException 抛出IOException
      */
     public static <T> T load(Class<T> type, String fileName) throws IOException {
 
@@ -34,8 +35,9 @@ public class YamlTemplate {
 
     /**
      * 加载并序列化为 T
-     * @param fileName
-     * @return
+     * @param fileName 配置文件(.yaml)
+     * @return YamlMap
+     * @throws IOException 抛出IOException
      */
     public static YamlMap load(String fileName) throws IOException {
 
